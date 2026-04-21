@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Livre Brasil - Frete Grátis no mesmo dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="ml-header">
+        <div class="ml-container">
+            <div class="ml-top-row">
+                <div class="ml-logo clickable" onclick="nav('Home')">
+                    <img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/logo__large_plus.png" alt="Mercado Livre">
+                </div>
+                <div class="ml-search-bar">
+                    <input type="text" id="searchInput" placeholder="Buscar produtos, marcas e muito mais...">
+                    <button type="button" id="searchBtn">🔍</button>
+                </div>
+                <div class="ml-header-promo clickable" onclick="nav('Meli+')">
+                    <img src="https://http2.mlstatic.com/resources/frontend/statics/ml-u-s-assets/mkt/pwa/videos/disney-level-6-v2.png" alt="Meli+">
+                </div>
+            </div>
+
+            <div class="ml-bottom-nav">
+                <div class="ml-left-group">
+                    <div class="ml-address clickable" onclick="nav('Endereço')">
+                        <span class="send-to">Enviar para</span>
+                        <span class="user-loc">Brasil</span>
+                    </div>
+                    
+                    <nav class="ml-nav-container">
+                        <ul class="ml-nav-links">
+                            <li class="menu-item">Categorias ▾
+                                <div class="dropdown-content">
+                                    <a onclick="nav('Veículos')">Veículos</a>
+                                    <a onclick="nav('Tecnologia')">Tecnologia</a>
+                                    <a onclick="nav('Casa e Móveis')">Casa e Móveis</a>
+                                    <a onclick="nav('Moda')">Moda</a>
+                                </div>
+                            </li>
+                            <li onclick="nav('Ofertas')">Ofertas</li>
+                            <li onclick="nav('Histórico')">Histórico</li>
+                            <li onclick="nav('Supermercado')">Supermercado</li>
+                            <li onclick="nav('Moda')">Moda</li>
+                            <li onclick="nav('Vender')">Vender</li>
+                            <li onclick="nav('Contato')">Contato</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="ml-right-group">
+                    <ul class="ml-user-nav">
+                        <li onclick="nav('Cadastro')">Crie a sua conta</li>
+                        <li onclick="nav('Login')">Entre</li>
+                        <li onclick="nav('Compras')">Compras</li>
+                        <li class="cart-btn" onclick="nav('Carrinho')">🛒</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="ml-main">
+        <section class="ml-carousel">
+            <button class="c-btn prev" id="prevBtn">❮</button>
+            <div class="slider">
+                <img id="bannerImg" src="https://http2.mlstatic.com/D_NQ_938171-MLA74838634591_032024-OO.webp" alt="Banner">
+            </div>
+            <button class="c-btn next" id="nextBtn">❯</button>
+        </section>
+
+        <section class="ml-container">
+            <h2 class="ml-section-title">Ofertas do dia</h2>
+            <div class="ml-grid" id="productGrid">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

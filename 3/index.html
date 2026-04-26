@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Mercado Livre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Proxima Nova', sans-serif; background-color: #ebebeb; }
+    </style>
+</head>
+<body>
+
+    <header class="bg-[#fff159] pb-2 pt-3 shadow-sm">
+        <div class="max-w-[1200px] mx-auto flex flex-col gap-3 px-4">
+            
+            <div class="flex items-center justify-between gap-10">
+                <!--Logo mercado livre-->
+                <img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/logo__large_plus.png" alt="Mercado Livre" class="h-9">
+                
+                <div class="flex-grow relative">
+                    <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="w-full p-2.5 rounded-sm shadow-sm outline-none text-gray-600">
+                    <button class="absolute right-3 top-3 border-l pl-3 border-gray-300">
+                        <img src="https://img.icons8.com/ios/20/000000/search--v1.png" alt="Buscar"><!--alterado OK-->
+                    </button>
+                </div>
+
+                <div class="hidden md:block">
+                    <span class="text-sm text-gray-700">Frete grátis acima de R$79</span>
+                </div>
+            </div>
+<!--Endereço-->
+            <div class="flex items-center gap-1 cursor-pointer group">
+                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-70 group-hover:opacity-100">
+                    <path d="M9 19L11.5 16H6.5L9 19ZM9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1ZM9 3C12.3137 3 15 5.68629 15 9C15 12.3137 12.3137 15 9 15C5.68629 15 3 12.3137 3 9C3 5.68629 5.68629 3 9 3Z" fill="#333333"/>
+                    <circle cx="9" cy="9" r="2.3" fill="#333333"/>
+                </svg>
+
+                <div class="flex flex-col leading-tight">
+                    <span class="text-[11px] text-gray-500">Enviar para</span>
+                    <span class="text-[13px] font-semibold text-gray-800">cliente - CEP</span><!--Alterar-->
+                </div>
+            </div>
+<!--barra categorias-->                
+                <nav class="flex gap-4">
+                    <a href="#" class="hover:text-gray-900">Categorias</a>
+                    <a href="#" class="hover:text-gray-900">Ofertas</a>
+                    <a href="#" class="hover:text-gray-900">Cupons</a>
+                    <a href="#" class="hover:text-gray-900">Mercado Play</a>
+                </nav>
+
+                <div class="flex gap-4">
+                    <a href="#">Crie a sua conta</a>
+                    <a href="#">Entre</a>
+                    <a href="#">Compras</a>
+                    <span>🛒</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="w-full bg-black h-[340px] relative overflow-hidden flex items-center">
+        <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent z-10 opacity-60"></div>
+        <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&q=80&w=2000" class="absolute w-full h-full object-cover" alt="Veículo">
+        
+        <div class="max-w-[1200px] mx-auto w-full px-4 z-20">
+            <h1 class="text-white text-5xl font-bold uppercase leading-tight">
+                Peças para <br> seu veículo
+            </h1>
+            <div class="mt-6 flex items-center gap-4">
+                <div class="bg-white p-3 rounded-md shadow-xl">
+                    <p class="text-black font-bold">GANHE MAIS <span class="text-green-600">5% OFF</span></p>
+                    <p class="text-xs text-gray-500 flex items-center gap-1">COM <span class="font-bold text-teal-500">❖ pix</span></p>
+                </div>
+                <div class="bg-[#3483fa] text-white px-4 py-2 rounded font-bold cursor-pointer"> Ver mais </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-[1200px] mx-auto px-4 -mt-12 relative z-30">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-0 shadow-lg rounded-md overflow-hidden bg-white">
+            
+            <div class="p-4 border-r border-gray-100 flex flex-col items-center hover:bg-gray-50 cursor-pointer">
+                <div class="w-12 h-12 mb-2 bg-yellow-100 rounded-full flex items-center justify-center">📦</div>
+                <p class="text-[13px] font-bold text-center">Frete grátis</p>
+                <p class="text-[11px] text-gray-400 text-center">Benefício por compra</p>
+            </div>
+
+            <div class="p-4 border-r border-gray-100 flex flex-col items-center hover:bg-gray-50 cursor-pointer">
+                <div class="w-12 h-12 mb-2 bg-yellow-100 rounded-full flex items-center justify-center">👤</div>
+                <p class="text-[13px] font-bold text-center">Entre na conta</p>
+                <p class="text-[11px] text-gray-400 text-center">Aproveite ofertas</p>
+            </div>
+
+            <div class="p-4 border-r border-gray-100 flex flex-col items-center hover:bg-gray-50 cursor-pointer">
+                <div class="w-12 h-12 mb-2 bg-yellow-100 rounded-full flex items-center justify-center">📍</div>
+                <p class="text-[13px] font-bold text-center">Localização</p>
+                <p class="text-[11px] text-gray-400 text-center">Confira custos</p>
+            </div>
+
+            <div class="p-4 border-r border-gray-100 flex flex-col items-center hover:bg-gray-50 cursor-pointer">
+                <div class="w-12 h-12 mb-2 bg-yellow-100 rounded-full flex items-center justify-center">💳</div>
+                <p class="text-[13px] font-bold text-center">Pagamento</p>
+                <p class="text-[11px] text-gray-400 text-center">Rápido e seguro</p>
+            </div>
+
+            <div class="p-4 border-r border-gray-100 flex flex-col items-center hover:bg-gray-50 cursor-pointer">
+                <div class="w-12 h-12 mb-2 bg-yellow-100 rounded-full flex items-center justify-center">💰</div>
+                <p class="text-[13px] font-bold text-center">Menos de R$100</p>
+                <p class="text-[11px] text-gray-400 text-center">Preços baixos</p>
+            </div>
+
+            <div class="p-4 flex flex-col items-center hover:bg-gray-50 cursor-pointer">
+                <div class="w-12 h-12 mb-2 bg-yellow-100 rounded-full flex items-center justify-center">🔥</div>
+                <p class="text-[13px] font-bold text-center">Mais vendidos</p>
+                <p class="text-[11px] text-gray-400 text-center">Explore tendências</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

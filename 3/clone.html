@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Livre Brasil - Frete gratis para todo o Brasil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #ebebeb; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        .ml-shadow { box-shadow: 0 1px 2px 0 rgba(0,0,0,.1); }
+        .full-icon { color: #00a650; font-style: italic; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header class="bg-[#fff159] pt-2 pb-1 border-b border-gray-300">
+        <div class="max-w-[1200px] mx-auto px-4">
+            <div class="flex items-center justify-between gap-8 mb-2">
+                <!--Link do logo-->
+                <img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.22/mercadolibre/logo__large_plus.png" class="h-8 md:h-9" alt="Mercado Livre">
+                <!--Barra de pesquisa-->
+                <div class="flex-grow max-w-[600px] relative">
+                    <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="w-full py-2 px-4 rounded-sm ml-shadow outline-none text-gray-700 text-[16px]">
+                    <div class="absolute right-3 top-2.5 text-gray-400 border-l pl-3 border-gray-200">🔍</div>
+                </div>
+<!--link meli parceria oficial-->
+                <img src="mercado-ezgif.com-video-to-gif-converter.gif" class="h-9 hidden lg:block" alt="Meli Plus">
+            </div>
+<!--Endereço-->
+            <div class="flex items-center justify-between text-[13px] text-gray-600 pb-1">
+                <div class="flex items-center gap-1 cursor-pointer group">
+                    <svg width="16" height="20" viewBox="0 0 18 20" fill="none" class="opacity-60 group-hover:opacity-100">
+                        <path d="M9 19L11.5 16H6.5L9 19ZM9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1ZM9 3C12.3137 3 15 5.68629 15 9C15 12.3137 12.3137 15 9 15C5.68629 15 3 12.3137 3 9C3 5.68629 5.68629 3 9 3Z" fill="#333"/>
+                    </svg>
+                    <div class="flex flex-col leading-none">
+                        <span class="text-[11px] text-gray-500">Enviar para</span>
+                        <span class="text-gray-800 text-[14px]">Rodrigo Nascimento - 09911-140</span>
+                    </div>
+                </div>
+<!--Barra central do site-->
+                <nav class="hidden md:flex items-center gap-5 text-gray-600/80">
+                    <a href="#" class="hover:text-black">Categorias</a>
+                    <a href="#" class="hover:text-black">Ofertas</a>
+                    <a href="#" class="hover:text-black">Histórico</a>
+                    <a href="#" class="hover:text-black">Supermercado</a>
+                    <a href="#" class="hover:text-black">Vender</a>
+                </nav>
+<!--Barra lateral direita-->
+                <div class="flex items-center gap-5">
+                    <a href="#">Crie a sua conta</a>
+                    <a href="#">Entre</a>
+                    <a href="#">Compras</a>
+                    <span class="text-xl">🛒</span>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--Banner estatico-->
+    <main class="bg-[#ebebeb] min-h-screen pb-10">
+    
+        <section class="relative group">
+            <div class="swiper mySwiper w-full h-[300px] lg:h-[420px]">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://http2.mlstatic.com/D_NQ_938637-MLA82084602959_012025-OO.webp" class="w-full h-full object-cover">
+                    </div>
+                <div class="swiper-slide">
+                    <img src="https://http2.mlstatic.com/D_NQ_716322-MLA82084602960_012025-OO.webp" class="w-full h-full object-cover">
+                </div>
+            </div>
+<!--Menus sobrepostos mo banner-->            
+            <div class="swiper-button-next !text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="swiper-button-prev !text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="max-w-[1200px] mx-auto px-4 -mt-12 relative z-20">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+<!--opções Alterar para oferta do dia / ofertas-->            
+            <div class="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3 cursor-pointer hover:shadow-md transition-all border-b-2 border-transparent hover:border-blue-500">
+                <div class="min-w-[40px] h-10 flex items-center justify-center border rounded-full">
+                <span class="text-xl">💳</span> </div>
+                <div>
+                <p class="text-[13px] font-semibold text-gray-800 leading-tight">Meios de pagamento</p>
+                <p class="text-[11px] text-blue-500">Ver todos</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-sm flex items-center gap-3 cursor-pointer hover:shadow-md transition-all">
+                <div class="min-w-[40px] h-10 flex items-center justify-center border rounded-full">
+                <span class="text-xl">🚚</span>
+                </div>
+                <div>
+                <p class="text-[13px] font-semibold text-gray-800 leading-tight">Frete grátis</p>
+                <p class="text-[11px] text-blue-500">Benefício Meli</p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+    </main>
+
+    <main class="max-w-[1200px] mx-auto px-4 -mt-16 relative z-10">
+        
+        <div class="grid grid-cols-3 md:grid-cols-6 bg-white rounded-md ml-shadow mb-10 overflow-hidden">
+            <div class="p-4 border-r border-gray-100 hover:bg-gray-50 cursor-pointer flex flex-col items-center">
+                <div class="w-10 h-10 bg-yellow-100 rounded-full mb-2 flex items-center justify-center">💳</div>
+                <span class="text-xs font-semibold text-center leading-tight">Pagamento rápido</span>
+            </div>
+            <div class="p-4 border-r border-gray-100 hover:bg-gray-50 cursor-pointer flex flex-col items-center">
+                <div class="w-10 h-10 bg-yellow-100 rounded-full mb-2 flex items-center justify-center">🚚</div>
+                <span class="text-xs font-semibold text-center leading-tight">Frete Grátis</span>
+            </div>
+            <div class="p-4 border-r border-gray-100 hover:bg-gray-50 cursor-pointer flex flex-col items-center">
+                <div class="w-10 h-10 bg-yellow-100 rounded-full mb-2 flex items-center justify-center">🛡️</div>
+                <span class="text-xs font-semibold text-center leading-tight">Compra Garantida</span>
+            </div>
+            <div class="p-4 border-r border-gray-100 hover:bg-gray-50 cursor-pointer flex flex-col items-center">
+                <div class="w-10 h-10 bg-yellow-100 rounded-full mb-2 flex items-center justify-center">📱</div>
+                <span class="text-xs font-semibold text-center leading-tight">Baixe o App</span>
+            </div>
+            <div class="p-4 border-r border-gray-100 hover:bg-gray-50 cursor-pointer flex flex-col items-center">
+                <div class="w-10 h-10 bg-yellow-100 rounded-full mb-2 flex items-center justify-center">💎</div>
+                <span class="text-xs font-semibold text-center leading-tight">Meli+ Benefícios</span>
+            </div>
+            <div class="p-4 hover:bg-gray-50 cursor-pointer flex flex-col items-center">
+                <div class="w-10 h-10 bg-yellow-100 rounded-full mb-2 flex items-center justify-center">➕</div>
+                <span class="text-xs font-semibold text-center leading-tight">Ver Mais</span>
+            </div>
+        </div>
+<!--Ofertas do dia-->
+        <h2 class="text-2xl text-gray-600 mb-4 flex items-center gap-2">
+            Ofertas do dia <span class="text-sm text-blue-500 font-normal hover:underline cursor-pointer">Ver todas</span>
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-20">
+<!--conteiners de produtos-->            
+            <div class="bg-white rounded ml-shadow overflow-hidden group cursor-pointer">
+                <div class="h-48 border-b border-gray-100 overflow-hidden">
+                    <!--imagem produto-->
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_675549-MLU78280629731_082024-O.webp" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <p class="text-xs text-green-600 font-bold mb-1 uppercase">Oferta do dia</p>
+                    <div class="flex items-baseline">
+                        <span class="text-2xl text-gray-900">R$ 1.499</span>
+                        <span class="text-[13px] ml-0.5 self-start pt-1 font-semibold">90</span>
+                    </div>
+                    <!--Descrição produto-->
+                    <p class="text-xs text-gray-500 italic mt-1">10x R$ 149,99 sem juros</p>
+                    <p class="text-sm text-green-600 font-bold mt-1 italic">Frete grátis <span class="full-icon">⚡ FULL</span></p>
+                    <p class="text-sm text-gray-600 mt-2 line-clamp-2">Smartphone Samsung Galaxy A55 128GB 5G</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded ml-shadow overflow-hidden group cursor-pointer">
+                <div class="h-48 border-b border-gray-100 overflow-hidden">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_657920-MLA81112461872_122024-O.webp" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+                </div>
+                <div class="p-4">
+                    <p class="text-xs text-green-600 font-bold mb-1 uppercase">OFERTA IMPERDÍVEL</p>
+                    <div class="flex items-baseline">
+                        <span class="text-2xl text-gray-900">R$ 89</span>
+                        <span class="text-[13px] ml-0.5 self-start pt-1 font-semibold">00</span>
+                    </div>
+                    <p class="text-sm text-green-600 font-bold mt-1 italic">Frete grátis <span class="full-icon">⚡ FULL</span></p>
+                    <p class="text-sm text-gray-600 mt-2 line-clamp-2">Fone de Ouvido Bluetooth TWS Premium</p>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+</body>
+</html>
